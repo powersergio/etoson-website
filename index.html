@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Etoson — AI-студия для бизнеса</title>
+<meta name="description" content="Настраиваем AI-агентов, CRM-интеграции, n8n-сценарии, контент-заводы и AI-видео для бизнеса."/>
+<link rel="stylesheet" href="styles/tokens.css"/>
+<link rel="stylesheet" href="styles/site.css"/>
+</head>
+<body class="et-base">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" data-screen-label="Home">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html" aria-label="Etoson">
+      <svg viewBox="0 0 220 36" width="120" height="22" fill="none" aria-hidden="true">
+        <g>
+          <circle cx="6" cy="8" r="3" fill="currentColor"/>
+          <circle cx="6" cy="18" r="3" fill="currentColor"/>
+          <circle cx="6" cy="28" r="3" fill="currentColor"/>
+          <circle cx="16" cy="8" r="3" fill="currentColor"/>
+          <circle cx="16" cy="18" r="3" fill="currentColor"/>
+          <circle cx="26" cy="8" r="3" fill="currentColor"/>
+          <circle cx="26" cy="28" r="3" fill="currentColor"/>
+        </g>
+        <text x="40" y="25" font-family="Inter, system-ui" font-size="20" font-weight="600" letter-spacing="-0.03em" fill="currentColor">Etoson</text>
+      </svg>
+    </a>
+    <nav class="site-header__nav">
+      <a class="et-link" href="#services">Услуги</a>
+      <a class="et-link" href="#cases">Кейсы</a>
+      <a class="et-link" href="pricing.html">Цены</a>
+      <a class="et-link" href="#faq">FAQ</a>
+    </nav>
+    <div class="site-header__actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Сменить тему">☾</button>
+      <a class="btn btn--solid" href="#contact">Обсудить задачу <span class="arrow">→</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <span class="eyebrow"><span class="num">01</span> AI-студия для бизнеса</span>
+    <h1 class="hero__display">Снимаем рутину с команды и запускаем поток контента <em class="em-mute">на ИИ.</em></h1>
+    <p class="hero__deck">Настраиваем AI-агентов, CRM-интеграции, n8n-сценарии, контент-заводы и AI-видео. Вы описываете задачу обычными словами — мы предлагаем сценарий и собираем рабочее решение.</p>
+
+    <div class="hero__ctas">
+      <a class="btn btn--solid btn--lg" href="#contact">Обсудить задачу <span class="arrow">→</span></a>
+      <a class="et-link et-link--accent" href="pricing.html" style="font-size:16px;font-weight:500;">Посмотреть прайс</a>
+    </div>
+
+    <div class="hero__meta">
+      <span class="mono">// Что внутри:</span>
+      <span style="display:flex;gap:24px;flex-wrap:wrap;font-size:14px;color:var(--fg-2);">
+        <span>AI-агенты</span>
+        <span>CRM + n8n</span>
+        <span>Контент-завод</span>
+        <span>AI-видео</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE DO ============ -->
+<section class="section" id="services">
+  <div class="section-head">
+    <span class="eyebrow"><span class="num">02</span> Что мы делаем</span>
+    <h2 class="h-display">Помогаем бизнесу внедрять AI-решения, которые <em class="em-mute">экономят время, ускоряют продажи и усиливают маркетинг.</em></h2>
+    <p class="section-head__deck">Четыре направления. Их можно собрать в одну рабочую систему — или запустить по одному, начиная с самой болезненной точки.</p>
+  </div>
+
+  <div class="cats">
+    <article class="cat">
+      <div class="cat__head">
+        <h3 class="cat__title">AI-агенты и автоматизация продаж</h3>
+        <span class="cat__num">01</span>
+      </div>
+      <p class="cat__desc">AI-агент берёт на себя живое общение с клиентами в чатах, мессенджерах и на сайте. Отвечает первым, задаёт уточняющие вопросы и передаёт менеджеру тёплый разговор.</p>
+      <span class="cat__label">Что умеет в диалоге</span>
+      <ul class="cat__list">
+        <li>Отвечает в Telegram, WhatsApp, Avito и на сайте</li>
+        <li>Квалифицирует заявку: бюджет, сроки, что нужно</li>
+        <li>Создаёт заявку или задачу по итогам разговора</li>
+        <li>Напоминает об оплате, записи или доставке</li>
+        <li>Передаёт тёплые лиды в отдел продаж</li>
+      </ul>
+      <p class="cat__benefit"><strong>Бизнесу:</strong> клиент получает ответ за секунды в любое время, менеджер подключается к подготовленному разговору, ни одна заявка не теряется.</p>
+    </article>
+
+    <article class="cat">
+      <div class="cat__head">
+        <h3 class="cat__title">Интеграции CRM, n8n и бизнес-процессов</h3>
+        <span class="cat__num">02</span>
+      </div>
+      <p class="cat__desc">Связываем мессенджеры, CRM, таблицы и сайт в одну систему, чтобы данные двигались между ними без участия человека.</p>
+      <span class="cat__label">Что настраиваем</span>
+      <ul class="cat__list">
+        <li>Интеграции с amoCRM, Bitrix24, 1С</li>
+        <li>Сценарии автоматизации через n8n</li>
+        <li>Связки Telegram, Avito, сайта и CRM</li>
+        <li>Передача данных в Google Sheets</li>
+        <li>Автоматические уведомления и постановка задач</li>
+      </ul>
+      <p class="cat__benefit"><strong>Бизнесу:</strong> данные перетекают между сервисами сами, заявки не теряются, отчёты собираются автоматически, команда видит актуальную картину в реальном времени.</p>
+    </article>
+
+    <article class="cat">
+      <div class="cat__head">
+        <h3 class="cat__title">Контент-завод для соцсетей</h3>
+        <span class="cat__num">03</span>
+      </div>
+      <p class="cat__desc">Выстраиваем систему регулярного производства контента — от анализа продукта до публикации и аналитики. Это не разовые посты, а конвейер.</p>
+      <span class="cat__label">Что входит</span>
+      <ul class="cat__list">
+        <li>Анализ продукта, аудитории и конкурентов</li>
+        <li>Контент-стратегия и план</li>
+        <li>Сценарии для Reels, Shorts и коротких роликов</li>
+        <li>Тексты постов, хуки и офферы</li>
+        <li>Визуалы, обложки, автопостинг и аналитика</li>
+      </ul>
+      <p class="cat__benefit"><strong>Бизнесу:</strong> регулярный поток контента, который выходит по расписанию, а не когда у руководителя появляется на это время.</p>
+    </article>
+
+    <article class="cat">
+      <div class="cat__head">
+        <h3 class="cat__title">AI-видео для рекламы и маркетплейсов</h3>
+        <span class="cat__num">04</span>
+      </div>
+      <p class="cat__desc">Не «ролики из нейросети», а готовый видеоконтент, который можно сразу разместить в рекламе, Reels, Shorts, TikTok или в карточке товара на WB и Ozon.</p>
+      <span class="cat__label">Что делаем</span>
+      <ul class="cat__list">
+        <li>Рекламные AI-ролики</li>
+        <li>Reels, Shorts, TikTok-видео</li>
+        <li>Видео для карточек Wildberries и Ozon</li>
+        <li>AI-аватары и цифровые ведущие</li>
+        <li>Сценарии, монтаж, озвучка, субтитры</li>
+      </ul>
+      <p class="cat__benefit"><strong>Бизнесу:</strong> готовое видео для продвижения без съёмочной команды, студии и недель подготовки.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CASES ============ -->
+<section class="section section--inset" id="cases">
+  <div class="section__wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="num">03</span> Что меняется после внедрения</span>
+      <h2 class="h-display">Четыре типичных задачи — <em class="em-mute">и как они решаются.</em></h2>
+    </div>
+
+    <div class="cases">
+      <article class="case">
+        <span class="case__index">Кейс 01 — AI-агент в продажах</span>
+        <h3 class="case__title">Заявки в Telegram и на Avito не теряются ночью</h3>
+        <div class="case__row">
+          <span class="case__lbl">Было</span>
+          <p class="case__txt case__txt--mute">Менеджер тратит 2–3 часа в день на однотипные ответы. Часть заявок теряется ночью и в выходные.</p>
+        </div>
+        <div class="case__row">
+          <span class="case__lbl case__lbl--good">Стало</span>
+          <p class="case__txt">AI-агент отвечает первым в любое время, квалифицирует запрос и передаёт менеджеру тёплый лид. У человека освобождается 10+ часов в неделю на сделки.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case__index">Кейс 02 — CRM-интеграция</span>
+        <h3 class="case__title">Заявки из всех каналов попадают в CRM сами</h3>
+        <div class="case__row">
+          <span class="case__lbl">Было</span>
+          <p class="case__txt case__txt--mute">Заявки приходят в Telegram, на сайт и в Avito. Сотрудник вручную переносит их в amoCRM, обновляет таблицу и ставит задачи.</p>
+        </div>
+        <div class="case__row">
+          <span class="case__lbl case__lbl--good">Стало</span>
+          <p class="case__txt">Заявка из любого канала автоматически попадает в CRM с правильным тегом, ставится задача на ответственного, обновляется отчётная таблица. Ручной работы — ноль.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case__index">Кейс 03 — Контент-завод</span>
+        <h3 class="case__title">Соцсети ведутся по плану, а не «когда успеем»</h3>
+        <div class="case__row">
+          <span class="case__lbl">Было</span>
+          <p class="case__txt case__txt--mute">Соцсети ведутся по остаточному принципу, посты выходят раз в две недели, идеи приходится придумывать заново каждый раз.</p>
+        </div>
+        <div class="case__row">
+          <span class="case__lbl case__lbl--good">Стало</span>
+          <p class="case__txt">На месяц вперёд есть контент-план, сценарии для роликов и готовые посты. Публикации выходят по расписанию, без вовлечения руководителя.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <span class="case__index">Кейс 04 — AI-видео для маркетплейса</span>
+        <h3 class="case__title">Карточка на WB получает видео за пару дней</h3>
+        <div class="case__row">
+          <span class="case__lbl">Было</span>
+          <p class="case__txt case__txt--mute">Карточка товара без видео; конкуренты с роликами получают больше показов и кликов.</p>
+        </div>
+        <div class="case__row">
+          <span class="case__lbl case__lbl--good">Стало</span>
+          <p class="case__txt">В карточке короткое AI-видео, которое показывает товар в работе. Сделано без съёмки, студии и моделей — за пару дней.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="cases-footnote">Конкретные цифры по каждому проекту обсуждаем индивидуально и подтверждаем кейсами.</p>
+  </div>
+</section>
+
+<!-- ============ AUDIENCE ============ -->
+<section class="section">
+  <div class="section-head">
+    <span class="eyebrow"><span class="num">04</span> Кому подойдёт</span>
+    <h2 class="h-display">Решения для команд, где есть заявки, продажи <em class="em-mute">и повторяющиеся процессы.</em></h2>
+  </div>
+  <div class="audience-grid">
+    <p class="audience-grid__deck">Если в работе много ручной рутины, таблиц, заявок и отчётов — почти всё это можно автоматизировать. Если нужен регулярный контент или видео для продвижения — собирается за дни, а не за месяцы.</p>
+    <div class="chips">
+      <span class="chip">Владельцы бизнеса</span>
+      <span class="chip">Отделы продаж</span>
+      <span class="chip">Интернет-магазины</span>
+      <span class="chip">Селлеры Wildberries и Ozon</span>
+      <span class="chip">Агентства</span>
+      <span class="chip">Маркетологи</span>
+      <span class="chip">Эксперты и онлайн-школы</span>
+      <span class="chip">Локальный бизнес</span>
+      <span class="chip">B2B-компании</span>
+      <span class="chip">Компании с большим объёмом рутины</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="section section--inset" id="process">
+  <div class="section__wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="num">05</span> Как мы работаем</span>
+      <h2 class="h-display">Пять шагов — <em class="em-mute">от описания задачи до запуска.</em></h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__n">01</span>
+        <span class="step__t">Вы описываете задачу</span>
+        <span class="step__d">Рассказываете, что хотите автоматизировать, улучшить или запустить: заявки, CRM, контент, видео, продажи или внутренние процессы. Техническое задание не нужно.</span>
+      </li>
+      <li class="step">
+        <span class="step__n">02</span>
+        <span class="step__t">Разбираем процесс и предлагаем сценарий</span>
+        <span class="step__d">Смотрим, что делается вручную, где теряются заявки, какие сервисы используются. Показываем понятную схему: что будет делать AI-агент, какие данные куда передаются, какой результат должен получиться.</span>
+      </li>
+      <li class="step">
+        <span class="step__n">03</span>
+        <span class="step__t">Настраиваем тестовую версию</span>
+        <span class="step__d">Собираем первый рабочий сценарий, AI-агента, контент-процесс или видеоматериал — на вашей задаче, с вашими данными.</span>
+      </li>
+      <li class="step">
+        <span class="step__n">04</span>
+        <span class="step__t">Согласовываем результат</span>
+        <span class="step__d">Демонстрируем, как решение работает вживую, собираем обратную связь и фиксируем правки. Если что-то нужно перестроить — делаем это до запуска.</span>
+      </li>
+      <li class="step">
+        <span class="step__n">05</span>
+        <span class="step__t">Дорабатываем и запускаем</span>
+        <span class="step__d">Вносим правки, подключаем нужные сервисы и передаём готовое решение в работу.</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section">
+  <div class="section-head">
+    <span class="eyebrow"><span class="num">06</span> Почему с нами</span>
+    <h2 class="h-display">Четыре причины, по которым клиенты остаются <em class="em-mute">после первого сценария.</em></h2>
+  </div>
+  <div class="why">
+    <div class="why__item">
+      <span class="why__num">01</span>
+      <h3 class="why__t">Без технического задания</h3>
+      <p class="why__d">Достаточно описать задачу обычными словами. Сценарий, схему интеграций и состав работ мы предлагаем сами — вы согласовываете.</p>
+    </div>
+    <div class="why__item">
+      <span class="why__num">02</span>
+      <h3 class="why__t">Меньше ручной работы</h3>
+      <p class="why__d">AI-агенты и автоматизации берут на себя ответы, заявки, таблицы, задачи, уведомления и отчёты. Команда работает с тем, что важно.</p>
+    </div>
+    <div class="why__item">
+      <span class="why__num">03</span>
+      <h3 class="why__t">Быстрее обработка заявок</h3>
+      <p class="why__d">Клиент получает ответ за секунды в любое время. Менеджер подключается уже к тёплому лиду со всей информацией.</p>
+    </div>
+    <div class="why__item">
+      <span class="why__num">04</span>
+      <h3 class="why__t">Контент выходит регулярно</h3>
+      <p class="why__d">Контент-завод выпускает посты, сценарии и короткие видео по системе, а не от случая к случаю.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="section-head">
+    <span class="eyebrow"><span class="num">07</span> Частые вопросы</span>
+    <h2 class="h-display">Что обычно спрашивают <em class="em-mute">перед стартом.</em></h2>
+  </div>
+  <ul class="faq">
+    <li class="faq__item">
+      <button class="faq__q">Нужно ли мне готовить техническое задание?<span class="faq__icon">+</span></button>
+      <div class="faq__a"><div><p>Нет. Достаточно описать задачу обычными словами или прислать ссылку на сайт, CRM или процесс. Структуру и сценарий предложим мы.</p></div></div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">Сколько времени занимает запуск?<span class="faq__icon">+</span></button>
+      <div class="faq__a"><div><p>Простая автоматизация — 3–5 дней. AI-агент под процесс — 7–14 дней. Контент-завод — MVP за 7–10 дней. Простое AI-видео — 1–2 дня.</p></div></div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">С какими сервисами вы интегрируетесь?<span class="faq__icon">+</span></button>
+      <div class="faq__a"><div><p>Telegram, WhatsApp, Avito, amoCRM, Bitrix24, 1С, Google Sheets, Wildberries, Ozon, n8n и любые сервисы с открытым API.</p></div></div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">Можно начать с маленькой задачи?<span class="faq__icon">+</span></button>
+      <div class="faq__a"><div><p>Да. Многие клиенты начинают с одного сценария автоматизации, одного ролика или одного пакета постов — и масштабируют, когда видят результат.</p></div></div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">Что нужно от меня, чтобы начать?<span class="faq__icon">+</span></button>
+      <div class="faq__a"><div><p>Доступы к сервисам, которые вы хотите автоматизировать (CRM, мессенджеры, таблицы), и короткое описание задачи. По доступам и безопасности подскажем, как настроить корректно.</p></div></div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="contact">
+  <div class="cta__wrap">
+    <span class="eyebrow"><span class="num">08</span> Расскажите задачу</span>
+    <h2 class="cta__display">Что хотите автоматизировать <em class="em-mute">или запустить?</em></h2>
+    <p class="cta__deck">Опишите задачу в свободной форме: какие сервисы используете, где сейчас тратится больше всего времени и какой результат хотите получить. Мы разберём процесс, подскажем, что можно автоматизировать, и предложим оптимальный формат запуска.</p>
+    <p class="cta__deck" style="color:var(--fg-1);"><strong>Можно без технического задания.</strong> Достаточно описать задачу обычными словами — мы сами предложим структуру, сценарий и стоимость.</p>
+    <div class="cta__ctas">
+      <a class="btn btn--solid btn--lg" href="#" data-comment-anchor="cta-lead">Оставить заявку <span class="arrow">→</span></a>
+      <a class="btn btn--ghost btn--lg" href="#" data-comment-anchor="cta-telegram">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <a class="site-header__logo" href="index.html" aria-label="Etoson" style="color:var(--fg-1);">
+          <svg viewBox="0 0 220 36" width="120" height="22" fill="none" aria-hidden="true">
+            <g>
+              <circle cx="6" cy="8" r="3" fill="currentColor"/><circle cx="6" cy="18" r="3" fill="currentColor"/><circle cx="6" cy="28" r="3" fill="currentColor"/>
+              <circle cx="16" cy="8" r="3" fill="currentColor"/><circle cx="16" cy="18" r="3" fill="currentColor"/>
+              <circle cx="26" cy="8" r="3" fill="currentColor"/><circle cx="26" cy="28" r="3" fill="currentColor"/>
+            </g>
+            <text x="40" y="25" font-family="Inter, system-ui" font-size="20" font-weight="600" letter-spacing="-0.03em" fill="currentColor">Etoson</text>
+          </svg>
+        </a>
+        <p class="footer__desc">AI-студия для бизнеса. Снимаем рутину, ускоряем продажи и запускаем поток контента — на готовых AI-инструментах и собственных сценариях.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a class="et-link" href="#services">AI-агенты</a></li>
+          <li><a class="et-link" href="#services">CRM-интеграции</a></li>
+          <li><a class="et-link" href="#services">Контент-завод</a></li>
+          <li><a class="et-link" href="#services">AI-видео</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a class="et-link" href="#services">О нас</a></li>
+          <li><a class="et-link" href="#cases">Кейсы</a></li>
+          <li><a class="et-link" href="pricing.html">Цены</a></li>
+          <li><a class="et-link" href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a class="et-link" href="#">Telegram</a></li>
+          <li><a class="et-link" href="#">hello@etoson.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© 2026 Etoson · AI-студия для бизнеса</span>
+      <span>Made with restraint · Iris #4F46E5</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/site.js"></script>
+</body>
+</html>

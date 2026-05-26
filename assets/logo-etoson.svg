@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 36" fill="none">
+  
+  <g>
+    <circle cx="6" cy="8" r="3" fill="currentColor"></circle>
+    <circle cx="6" cy="18" r="3" fill="currentColor"></circle>
+    <circle cx="6" cy="28" r="3" fill="currentColor"></circle>
+    <circle cx="16" cy="8" r="3" fill="currentColor"></circle>
+    <circle cx="16" cy="18" r="3" fill="currentColor"></circle>
+    <circle cx="26" cy="8" r="3" fill="currentColor"></circle>
+    <circle cx="26" cy="28" r="3" fill="currentColor"></circle>
+  </g>
+  
+  <text x="40" y="25" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="600" letter-spacing="-0.03em" fill="currentColor">Etoson</text>
+</svg>
