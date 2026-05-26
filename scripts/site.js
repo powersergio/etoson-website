@@ -55,6 +55,7 @@
   const successEl = overlay.querySelector('.modal__success');
   const phoneInput = document.getElementById('f-phone');
   const phoneErr = document.getElementById('f-phone-err');
+  const emailErr = document.getElementById('f-email-err');
 
   function open() {
     overlay.classList.add('is-open');
@@ -74,18 +75,43 @@
   overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
 
+  function isValidPhone(raw) {
+    const digits = raw.replace(/\D/g, '');
+    if (digits.length === 11) return /^[78]/.test(digits);
+    return digits.length === 10;
+  }
+
+  function isValidEmail(raw) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(raw);
+  }
+
   form.addEventListener('submit', async e => {
     e.preventDefault();
     const phone = phoneInput.value.trim();
-    const email = document.getElementById('f-email').value.trim();
+    const emailInput = document.getElementById('f-email');
+    const email = emailInput.value.trim();
 
     phoneInput.classList.remove('is-error');
+    emailInput.classList.remove('is-error');
     phoneErr.textContent = '';
+    if (emailErr) emailErr.textContent = '';
 
     if (!phone) {
       phoneInput.classList.add('is-error');
       phoneErr.textContent = 'Укажите номер телефона';
       phoneInput.focus();
+      return;
+    }
+    if (!isValidPhone(phone)) {
+      phoneInput.classList.add('is-error');
+      phoneErr.textContent = 'Введите корректный номер (10–11 цифр)';
+      phoneInput.focus();
+      return;
+    }
+    if (email && !isValidEmail(email)) {
+      emailInput.classList.add('is-error');
+      if (emailErr) emailErr.textContent = 'Введите корректный email';
+      emailInput.focus();
       return;
     }
 
