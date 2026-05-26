@@ -353,6 +353,32 @@ a { color: inherit; text-decoration: none; }
   .pkg { padding: 24px; }
 }
 
+/* ============ LEGAL PAGES ============ */
+.legal-page { max-width: 760px; margin: 0 auto; padding: clamp(48px,6vw,80px) var(--margin-x) clamp(64px,8vw,96px); }
+.legal-page h1 { font-family:var(--font-display); font-size:clamp(28px,3.5vw,44px); font-weight:600; letter-spacing:-.03em; color:var(--fg-1); margin:24px 0 8px; }
+.legal-page .legal-meta { font-family:var(--font-mono); font-size:12px; color:var(--fg-3); margin:0 0 48px; display:flex; gap:24px; flex-wrap:wrap; }
+.legal-page h2 { font-family:var(--font-display); font-size:20px; font-weight:600; letter-spacing:-.02em; color:var(--fg-1); margin:44px 0 12px; padding-top:24px; border-top:1px solid var(--border-1); }
+.legal-page h3 { font-family:var(--font-sans); font-size:15px; font-weight:600; color:var(--fg-1); margin:20px 0 6px; }
+.legal-page p { font-size:15px; line-height:1.75; color:var(--fg-2); margin:0 0 14px; }
+.legal-page ol, .legal-page ul { padding-left:22px; margin:0 0 16px; }
+.legal-page li { font-size:15px; line-height:1.7; color:var(--fg-2); margin:0 0 6px; }
+.legal-page strong { color:var(--fg-1); font-weight:600; }
+.legal-page a { color:var(--accent); text-decoration:none; }
+.legal-page a:hover { text-decoration:underline; }
+.legal-page .req-block { margin-top:40px; padding:28px 32px; background:var(--bg-elev-1); border:1px solid var(--border-1); border-radius:var(--r-3); }
+.legal-page .req-block h2 { border-top:0; padding-top:0; margin-top:0; font-size:17px; }
+.legal-page .req-block p { font-size:14px; margin:0 0 8px; }
+
+/* Footer legal links bar */
+.footer__legal { display:flex; flex-wrap:wrap; gap:14px 28px; padding:20px 0; border-top:1px solid var(--border-1); }
+.footer__legal a { font-family:var(--font-sans); font-size:12px; color:var(--fg-3); text-decoration:none; white-space:nowrap; }
+.footer__legal a:hover { color:var(--fg-2); }
+
+/* Modal consent note */
+.modal__consent { font-size:12px; line-height:1.55; color:var(--fg-3); margin:0; }
+.modal__consent a { color:var(--accent); }
+.modal__consent a:hover { text-decoration:underline; }
+
 /* ============ MODAL ============ */
 .modal-overlay {
   position: fixed; inset: 0; z-index: 200;
