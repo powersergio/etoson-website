@@ -116,7 +116,7 @@
 
   <div class="price-callout">
     <p class="price-callout__txt"><strong>Нужен точный расчёт?</strong> Опишите задачу — пришлём смету с разбивкой по работам в течение рабочего дня.</p>
-    <a class="btn btn--solid" href="#contact">Запросить смету <span class="arrow">→</span></a>
+    <a class="btn btn--solid" href="#" data-modal-trigger>Запросить смету <span class="arrow">→</span></a>
   </div>
 </section>
 
@@ -226,8 +226,8 @@
     <h2 class="cta__display">Опишите задачу — пришлём <em class="em-mute">точную смету.</em></h2>
     <p class="cta__deck">Расскажите, какие сервисы используете, где сейчас тратится больше всего времени и какой результат хотите получить. Мы предложим оптимальный формат запуска и точную цифру по стоимости.</p>
     <div class="cta__ctas">
-      <a class="btn btn--solid btn--lg" href="#" data-comment-anchor="pricing-cta-lead">Оставить заявку <span class="arrow">→</span></a>
-      <a class="btn btn--ghost btn--lg" href="#" data-comment-anchor="pricing-cta-telegram">Написать в Telegram</a>
+      <a class="btn btn--solid btn--lg" href="#" data-modal-trigger>Оставить заявку <span class="arrow">→</span></a>
+      <a class="btn btn--ghost btn--lg" href="https://t.me/etosonbot" target="_blank" rel="noopener">Написать в Telegram</a>
     </div>
   </div>
 </section>
@@ -283,6 +283,33 @@
     </div>
   </div>
 </footer>
+
+<!-- ============ MODAL: Contact Form ============ -->
+<div class="modal-overlay" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal__close" aria-label="Закрыть">×</button>
+    <div class="modal__head">
+      <span class="eyebrow"><span class="num">→</span> Оставить заявку</span>
+      <h3 class="modal__title" id="modal-title">Оставьте контакты — свяжемся в течение рабочего дня</h3>
+    </div>
+    <form class="modal__form" id="contact-form" novalidate>
+      <div class="field">
+        <label class="field__label" for="f-phone">Телефон<span class="field__req">*</span></label>
+        <input class="field__input" id="f-phone" name="phone" type="tel" placeholder="+7 (999) 000-00-00" required autocomplete="tel"/>
+        <span class="field__err" id="f-phone-err"></span>
+      </div>
+      <div class="field">
+        <label class="field__label" for="f-email">Email <span class="field__opt">(необязательно)</span></label>
+        <input class="field__input" id="f-email" name="email" type="email" placeholder="you@example.com" autocomplete="email"/>
+      </div>
+      <button class="btn btn--solid btn--lg modal__submit" type="submit">Отправить заявку <span class="arrow">→</span></button>
+    </form>
+    <div class="modal__success">
+      <span class="modal__success-ico">✓</span>
+      <p>Заявка принята. Свяжемся с вами в течение рабочего дня.</p>
+    </div>
+  </div>
+</div>
 
 <script src="scripts/site.js"></script>
 </body>

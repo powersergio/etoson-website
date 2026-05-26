@@ -45,3 +45,68 @@
     });
   });
 })();
+
+// 4. Contact modal
+(function () {
+  const overlay = document.getElementById('contact-modal');
+  if (!overlay) return;
+
+  const form = document.getElementById('contact-form');
+  const successEl = overlay.querySelector('.modal__success');
+  const phoneInput = document.getElementById('f-phone');
+  const phoneErr = document.getElementById('f-phone-err');
+
+  function open() {
+    overlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => phoneInput && phoneInput.focus(), 60);
+  }
+  function close() {
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-modal-trigger]').forEach(btn => {
+    btn.addEventListener('click', e => { e.preventDefault(); open(); });
+  });
+
+  overlay.querySelector('.modal__close').addEventListener('click', close);
+  overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const phone = phoneInput.value.trim();
+    const email = document.getElementById('f-email').value.trim();
+
+    phoneInput.classList.remove('is-error');
+    phoneErr.textContent = '';
+
+    if (!phone) {
+      phoneInput.classList.add('is-error');
+      phoneErr.textContent = 'Укажите номер телефона';
+      phoneInput.focus();
+      return;
+    }
+
+    const submitBtn = form.querySelector('.modal__submit');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Отправляем…';
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phone, email })
+      });
+      if (!res.ok) throw new Error();
+      form.style.display = 'none';
+      successEl.classList.add('is-visible');
+      setTimeout(close, 3500);
+    } catch {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Отправить заявку <span class="arrow">→</span>';
+      phoneErr.textContent = 'Ошибка отправки. Попробуйте ещё раз.';
+    }
+  });
+})();
